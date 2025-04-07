@@ -1,0 +1,42 @@
+.card {
+  gap: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f2f7fd;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  .skills {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    > div {
+      padding: 1px 5px 0;
+      border-radius: 3px;
+      font-size: small;
+      font-weight: bold;
+    }
+    .html {
+      border: 2px solid #dc4b24;
+      color: #dc4b24;
+    }
+    .css {
+      border: 2px solid #254ae0;
+      color: #254ae0;
+    }
+    .javascript {
+      border: 2px solid #efdb54;
+      color: #efdb54;
+    }
+    .react {
+      border: 2px solid #51d6ff;
+      color: #51d6ff;
+    }
+  }
+}
+
+.job-details > * {
+  margin-bottom: 5px;
+}

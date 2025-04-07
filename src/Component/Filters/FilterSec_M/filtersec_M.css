@@ -1,0 +1,32 @@
+.filter-sec {
+  align-items: center;
+  display: flex;
+
+  .filter-icon {
+    width: 30px;
+  }
+}
+
+.filter-list-m {
+
+  flex-flow: row nowrap;
+  overflow-x: scroll;
+  scrollbar-width: none;
+
+  div {
+    display: inline-block;
+    margin: 0 10px;
+    white-space: nowrap;
+    padding: 6px 12px;
+    background-color: #dcdcdc;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+}
+
+
+@media only screen and (min-width: 768px){
+  .filter-sec{
+    display: none;
+  }
+}

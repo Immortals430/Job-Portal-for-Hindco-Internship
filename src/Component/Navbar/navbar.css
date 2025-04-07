@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap");
+
+.nav {
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  .logo {
+    width: 150px;
+  }
+  .menu{
+    cursor: pointer;
+  }
+
+}
+
+.nav-middle-sec{
+  display: none;
+  width: clamp(290px, 100%, 500px);
+  position: relative;
+  
+}
+
+
+
+
+.nav-right-sec {
+  display: none;
+  > div {
+    padding: 8px 12px;
+
+    border-radius: 4px;
+    transition: color 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+  }
+  .btn1 {
+    color: #000000;
+    border: 2px solid #000000;
+  }
+
+  .btn2 {
+    background-color: #0033f3;
+    color: white;
+  }
+}
+
+.nav-search-m {
+  margin: 20px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    .menu {
+      display: none;
+    }
+  }
+  .nav-right-sec {
+    display: flex;
+    gap: 20px;
+  }
+  .nav-search-m{
+    display: none;
+  }
+
+  .nav-middle-sec{
+    display: block;
+  }
+}

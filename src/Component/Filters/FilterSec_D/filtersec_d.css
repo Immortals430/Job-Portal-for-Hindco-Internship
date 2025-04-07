@@ -1,0 +1,20 @@
+.filtersec_d {
+  h1 {
+    margin-bottom: 20px;
+  }
+}
+
+.filters-d {
+  flex-direction: column;
+  > div {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+  }
+}
+
+.locations {
+  flex-direction: column;
+  gap: 10px;
+}
+

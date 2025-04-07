@@ -1,0 +1,68 @@
+.filterlist-sec-m {
+  width: 100%;
+  height: 100dvh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.563);
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.filterlist-sec-m.appear {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0s;
+}
+
+.filterlist-m {
+  position: absolute;
+  width: 100%;
+  height: 95%;
+  border-radius: 20px 20px 0 0;
+  background-color: white;
+  overflow: hidden;
+  top: 100%;
+  transition: all 0.3s ease;
+
+  > .head {
+    justify-content: space-between;
+    padding: 30px 20px;
+    h1 {
+      font-size: x-large;
+    }
+  }
+  >.body{
+    height: 100%;
+    
+  }
+
+  .filters {
+    flex-flow: column;
+    border: 1px solid rgb(190, 190, 190);
+    > div {
+      padding: 10px 20px;
+      border-bottom: 1px solid rgb(190, 190, 190);
+    }
+  }
+}
+
+.filterlist-m.appear {
+  top: 5%;
+  transition: all 0.5s ease;
+}
+
+.cities {
+  display: flex;
+  flex-flow: column;
+  border: 1px solid rgb(190, 190, 190);
+  border-left: none;
+  flex: 1;
+  padding: 10px 20px;
+
+  > div {
+    padding: 10px 20px;
+  }
+}
